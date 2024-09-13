@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img-vid/react-3d-logo.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>REACT JS--INTRODUCTION</title>
+  </head>
+  <body>
+    <h1 class="roots">HELLO TOP OF THE ROOT</h1>
+    <div id="root"></div>
+    <div id="root2"></div>
+    <div id="root3"></div>
+    <hr />
+    <div id="root4">
+      <h1>HELLO PETER</h1>
+    </div>
+    <h1 class="roots">HELLO BELOW OF THE ROOT</h1>
+    <!-- REACT at the end of the day is JAVASCRIPT! -->
+    <!-- Injecting react cdn in our project -->
+    <!-- The first file is the react.development.js is the core of the react -->
+    <!-- second file is react-dom that is document object models -->
+    <!-- React doesn't works on browsers it also works on mobile phones,react--native,react3d and many more -->
+    <!-- Superpowerful webapplications using this files:) -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <!-- <script>
+      let hone = document.createElement("h1");
+      hone.textContent = "hello world from js";
+      let root = document.querySelector("#root");
+      root.appendChild(hone);
+      let h2 = document.createElement("h2");
+      h2.textContent = "hello im using h2";
+      hone.appendChild(h2);
+    </script> -->
+    <!-- HELLO WORLD USING REACT -->
+    <!-- React.CreateElement takes three arguments->first one is what tag u want
+    to create,next one is an object,third one is what we have to put in that tag
+    now we have to put heading in div-id root,react NEEDS to have a root where
+    it can do all the dom stuff //here we created a root for our react library
+    creating a element is a core thing in react,but when we are creating root
+    and rendering something inside it is the job of react.DOM -->
+    <!-- <script>
+      let heading = React.createElement("h1", {}, "Hello world from react");
+      let root = ReactDOM.createRoot(document.querySelector("#root"));
+      root.render(heading);
+    </script> -->
+    <script src="./App.js"></script>
+    <!-- THE ORDER OF THE FILES MATTERS first we have react.development then we have react.DOM and in the last the script tag -->
+  </body>
+</html>
